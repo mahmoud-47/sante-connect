@@ -1,0 +1,94 @@
+Objectif : 
+	une application permettant aux utilisateurs de faire une réservation en ligne de rendez-vous chez le médecin.
+	
+Fonctionnalités:
+	sécurité des données et la protection de la vie privée des utilisateurs
+	interface utilisateur conviviale et réactive
+
+Types de compte :
+	utilisateurs
+	médecins
+	l’administrateur
+
+* Visiteur :
+	Gestion de compte : OK
+	Recherche de services : KO
+		possibilité de rechercher différents types de services disponibles, tels que des rendez-vous médicaux
+		les services disponibles à coté du lieu de rendez-vous (par exemples : retrait wave, orange money, pharmacie,
+			restaurants, …).
+	Calendrier de Disponibilité: KO
+		Affichez les plages horaires disponibles pour les différents services et permettez aux utilisateurs de sélectionner leur 				horaire préféré
+	Réservation : 
+		Permettez aux utilisateurs de réserver un créneau horaire spécifique pour le service souhaité en indiquant des détails tels 		que la date, l'heure, le nombre de personnes, etc.
+	Gestion de Réservations : 
+		Fournissez aux utilisateurs un tableau de bord où ils peuvent voir toutes leurs réservations passées et à venir, ainsi que la 				possibilité de les modifier ou de les annuler si nécessaire.
+	Paiements en Ligne : 
+		Intégrez une passerelle de paiement sécurisée pour permettre aux utilisateurs qui le souhaitent de régler leurs réservations 				en ligne.
+	Avis et Évaluations : 
+		Autorisez les utilisateurs à laisser des avis et des évaluations après avoir utilisé le service, ce qui peut aider d'autres 			utilisateurs à faire des choix éclairés
+Idees :
+	Envoyer un mail au medecin dès k1 gars fait une reservation, s'il confirme envoyer un mail à l'user
+	reservations : page avec medecins et calendriers juste au dessous, placer les favoris en haut 
+	quand le medecin annule ou reprogramme envoyer un mail aux users concernés
+	Appointment : pour programmer un rdv (liste des medecins dispo et leur agenda)
+	history -> Dashboard : pour les reservations passées et à venir
+	collecet de données des hopitaux à intégrer (localisation, services à côté, site de l'hopital)
+	Avoir des hopitaux agréés 
+	lien vers le site de l'hopital en question
+	infos sur les services à côtés de chaque hopital
+	permettre au medecin de boucler un crenau
+	apres reservation, diriger le user vers la page dashboard avec comme etat( en attente, en cours, annulé, dejà fait)
+	
+
+Pages :
+	* Gestion de compte :
+		login, register, forgot, reset
+		
+	* Accueil :
+		- specialités
+		- favoris (scroll horizontal)
+		- truc sympa en bleu (call to action faire une reservation)
+		- recherche et filtre de recherche 
+		- favoris
+		- infos compte
+		
+	* Resultat recherche :
+		- page semblable à detail spécialité si on cherche un medecin
+		- page semblable à see all specialities 
+		
+	* Detail specialité
+		- Liste des medecins en rapport avec design LIKE Fatou Ndiaye
+		- note de chaque doctor
+		- laisser la specialité dessous et le lien vers vers l'hosto
+		- bouton liker
+		
+	* Historique / Dashboard :
+		- Noter le medecin apres service 
+		- modifier ou annuler une reservation
+		
+	* Detail Medecin :
+		- Montrer son agenda de la semaine
+		Attendre la partie Medecin
+	
+	* Profil :
+		- modifier infos
+		- modifier mot de passe
+		- Deconnexion
+	* Page Likes :
+		- Medecins likés
+		
+	* Notifications :
+	
+	* See All Doctor Specialities:
+		Afficher d'abord les favoris
+		Afficher les autres par note desc
+	* See All Top Doctors :
+		pour chaque specialités montrer les 5 meilleurs notés
+		
+Business Modele :
+	paiement des hopitaux agréés (faye par mois)
+	
+	
+	
+	
+	
