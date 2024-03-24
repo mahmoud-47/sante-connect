@@ -1,0 +1,24 @@
+.result-tableau{
+    font-size: 20px;
+}
+.tableau-container{
+    overflow-x: scroll;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+
+
+.tableau{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px solid #666;
+    margin-top: 30px;
+}
+.tableau  td, .tableau  th{
+    white-space: nowrap;
+    border: 1px solid #3C7ECC;
+    padding: 5px;
+    text-align: left;
+}

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F9F9F9;
+}
+/*Cas de base : Largeur maximale*/
+nav{
+    width: 17%;
+    height: 100vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3C7ECC;
+    z-index: 10;
+}
+#logo-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 150px;
+}
+#nav-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 10px;
+}
+#nav-elements a{
+    text-decoration: none;
+}
+.element{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.element span{
+    font-size: 16px;
+}
+.element.active_page{
+    background-color: white;
+    color: #3C7ECC;
+}
+#logout-container{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+#logout-container a{
+    text-decoration: none;
+}
+
+main{
+    margin-left: 17%;
+    width: 83%;
+    padding: 25px 30px;
+    position: relative;
+    background-color: #F9F9F9;
+    transition: all .5s ease;
+}
+#menu-button{
+    display: none;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.finaliser-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+label{
+    color: #3C7ECC;
+    font-size: 15px;
+}
+.inputs{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #3C7ECC;
+    outline: none; 
+    border-radius: 15px; 
+    padding-left: 20px;
+    color: rgba(137, 137, 137,.47);
+    background-color: #F8F8F8;
+}
+#commentaire{
+    width: 100%;
+    border: 2px solid #3C7ECC;
+    outline: none; 
+    border-radius: 15px; 
+    padding: 10px 20px;
+    color: rgba(137, 137, 137,.47);
+    background-color: #F8F8F8;
+
+}
+#accompagnants{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.accompagnant{
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+.inputs::placeholder{
+    color: rgba(137, 137, 137,.47);
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+.buttons span{
+    padding: 15px 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+#add{
+    background-color: #3C7ECC;
+}
+#remove{
+    background-color: #CC3C3C;
+    display: none;
+}
+.montant-container{
+    text-decoration: underline;
+    font-size: 20px;
+}
+#montant{
+    font-weight: bold;
+}
+/*Premier breackpoint : Largeur : 1250pixels*/
+@media screen and (max-width: 1250px) {
+    nav{
+        width: 20%;
+    }
+    main{
+        margin-left: 20%;
+        width: 80%;
+    }
+}
+/*Deuxieme breackpoint : Largeur : 1060pixels*/
+@media screen and (max-width: 1060px) {
+    nav{
+        width: 25%;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+@media screen and (max-width: 950px) {
+    h1{
+        font-size: 16px;
+    }
+}
+/*Troisième breackpoint : Largeur : 848pixels*/
+@media screen and (max-width: 848px) {
+    nav{
+        width: 30%;
+    }
+    main{
+        margin-left: 30%;
+        width: 70%;
+    }
+    .finaliser-div{
+        width: 100%;
+    }
+}
+
+/*Quatrième breackpoint : Largeur : 710pixels*/
+@media screen and (max-width: 710px) {
+    nav{
+        width: 35%;
+    }
+    main{
+        margin-left: 35%;
+        width: 65%;
+    }
+    .element img{
+        width: 20px;
+    }
+    .element span{
+        font-size: 15px;
+    }
+}
+    
+/*Cinquième breackpoint : Largeur : 500pixels*/
+@media screen and (max-width: 565px) {
+    nav{
+        width: 75%;
+        left: -75%;
+        transition: left 0.5s ease;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu-button{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #menu-img.active{
+        display: none;
+    }
+}

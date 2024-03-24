@@ -1,0 +1,38 @@
+.button-link{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.boutton-bleu{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    color: white;
+    background-color: #3C7ECC;
+    outline: none;
+    cursor: pointer;
+}
+
+.boutton-vert{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 1px solid #158521;
+    border-radius: 8px;
+    color: white;
+    background-color: #158521;
+    outline: none;
+    cursor: pointer;
+}
+.boutton-rouge{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 1px solid #CC3C3C;
+    border-radius: 8px;
+    color: white;
+    background-color: #CC3C3C;
+    outline: none;
+    cursor: pointer;
+}

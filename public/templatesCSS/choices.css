@@ -1,0 +1,21 @@
+.filter-slider{
+    min-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.filter-bloc{
+    display: inline-block;
+    text-decoration: none;
+    color: #3C7ECC;
+    border: 3px solid #3C7ECC;
+    font-weight: 800;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-right: 20px;
+}    
+.filter-bloc.active{
+    color: white;
+    background-color: #3C7ECC;
+}

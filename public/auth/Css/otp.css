@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F9F9F9;
+}
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.logo-text span{
+    font-size: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.otp-text{
+    width: 30%;
+    font-size: 13px;
+    color: #B0B0B0;
+    text-align: center;
+}
+#fields{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#fields input[type = "text"]{
+    width: 60px;
+    height: 60px;
+    background-color: #F8F8F8;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+}
+.validate{
+    width: 30%;
+    margin: 0 auto;
+}
+#submit{
+    width: 100%;
+    background-color: #3C7ECC;
+    border: none;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.link-container{
+    width: 30%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+    #fields, .validate,.otp-text{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #fields, .validate,.otp-text{
+        width: 50%;
+    }
+    .logo-text span{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #fields, .validate,.otp-text{
+        width: 70%;
+    }
+    .logo-text span{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #fields input[type = "text"]{
+        width: 40px;
+        height: 40px;
+    }
+}

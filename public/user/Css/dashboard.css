@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F9F9F9;
+}
+/*Cas de base : Largeur maximale*/
+nav{
+    width: 17%;
+    height: 100vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3C7ECC;
+    z-index: 10;
+}
+#logo-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 150px;
+}
+#nav-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 10px;
+}
+#nav-elements a{
+    text-decoration: none;
+}
+.element{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.element span{
+    font-size: 16px;
+}
+.element.active_page{
+    background-color: white;
+    color: #3C7ECC;
+}
+#logout-container{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+#logout-container a{
+    text-decoration: none;
+}
+
+main{
+    margin-left: 17%;
+    width: 83%;
+    padding: 25px 30px;
+    position: relative;
+    background-color: #F9F9F9;
+    transition: all .5s ease;
+}
+#menu-button{
+    display: none;
+}
+.med-cart{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    color: #1a1a1a;
+    padding: 15px 17px;
+    gap: 20px;
+}
+.top-cart-section{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.medecin-photo{
+    width: 78px;
+    height: 78px;
+    border-radius: 15px;
+}
+.cart-informations{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+.cart-informations span{
+    font-size: 12px;
+}
+.nom-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nom-like span{
+    font-weight: 800;
+    font-size: 12px;
+}
+hr{
+    border: 1px solid #E5E5E5;
+}
+.jour-heure{
+    display: flex;
+    color: #747373;
+    gap: 10px;
+}
+.hospi{
+    color: #3C7ECC;
+    font-size: 10px;
+}
+.montant-payé{
+    color: #747373;
+    font-size: 10px;
+}
+.modif-button{
+    color: white;
+    background-color: #3C7ECC;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.btn-container{
+    display: flex;
+    gap: 20px;
+}
+.btn-container .payer-button{
+    color: white;
+    background-color: #3C7ECC;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.btn-container .annuler-button{
+    color: #CC3C3C;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #CC3C3C;
+    border-radius: 15px;
+}
+.btn-container .laisse-avis-button{
+    color: #3C7ECC;
+    width: 140px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3C7ECC;
+    border-radius: 15px;
+
+}
+.state-status{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: fit-content;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.state-status.en-attente{
+    border: 3px solid #FE9535;
+    color: #FE9535;
+}
+.state-status.annule{
+    border: 3px solid #CC3C3C;
+    color: #CC3C3C;
+}
+.state-status.approuve{
+    border: 3px solid #158521;
+    color: #158521;
+}
+.statut-en-attente,.statut-rv-annule,.statut-rv-approuve{
+    position: relative;
+}
+.res-a-nouv-button{
+    color: white;
+    background-color: #3C7ECC;
+    width: 160px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.res-a-nouv-appr-button{
+    color: white;
+    background-color: #3C7ECC;
+    width: 160px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.info img{
+    width: 16px;
+}
+.info span{
+    font-size: 10px;
+    color: #747373;
+}
+/*Premier breackpoint : Largeur : 1250pixels*/
+@media screen and (max-width: 1250px) {
+    nav{
+        width: 20%;
+    }
+    main{
+        margin-left: 20%;
+        width: 80%;
+    }
+}
+/*Deuxieme breackpoint : Largeur : 1060pixels*/
+@media screen and (max-width: 1060px) {
+    nav{
+        width: 25%;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+@media screen and (max-width: 950px) {
+    h1{
+        font-size: 16px;
+    }
+}
+/*Troisième breackpoint : Largeur : 848pixels*/
+@media screen and (max-width: 848px) {
+    nav{
+        width: 30%;
+    }
+    main{
+        margin-left: 30%;
+        width: 70%;
+    }
+    .finaliser-div{
+        width: 100%;
+    }
+}
+
+/*Quatrième breackpoint : Largeur : 710pixels*/
+@media screen and (max-width: 710px) {
+    nav{
+        width: 35%;
+    }
+    main{
+        margin-left: 35%;
+        width: 65%;
+    }
+    .element img{
+        width: 20px;
+    }
+    .element span{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+    
+/*Cinquième breackpoint : Largeur : 500pixels*/
+@media screen and (max-width: 565px) {
+    nav{
+        width: 75%;
+        left: -75%;
+        transition: left 0.5s ease;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu-button{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #menu-img.active{
+        display: none;
+    }
+    .modif-button{
+        width: 100%;
+    }
+    .btn-container{
+        justify-content: space-between;
+    }
+    .state-status{
+        font-size: 10px;
+    }
+    .res-a-nouv-button{
+        width: 100%;
+    }
+    .res-a-nouv-appr-button{
+        width: 55%;
+        font-size: 13px;
+
+    }
+    .btn-container .laisse-avis-button{
+        width: 45%;
+        font-size: 13px;
+        /* el bachir diagne */
+    }
+    h1{
+        font-size: 18px;
+    }
+}

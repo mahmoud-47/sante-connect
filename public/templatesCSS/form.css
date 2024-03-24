@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contains form{ 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.heure{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.debut, .fin{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 47%;
+}
+.debut{
+    margin-right: 3%;
+}
+.numb{
+    display: inline-flex;
+    width: 50%;
+}
+.numb input{
+    width: 100%;
+    margin-right: 6%;
+}
+.envoie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date input, .debut input, .fin input, .numb input{
+    font-size: 16px;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    color: rgba(137, 137, 137,47%);
+    outline: none;
+    padding: 10px;
+}
+.envoie input{
+    padding: 10px 60px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    color: white;
+    background-color: #3C7ECC;
+    outline: none;
+}
+input[type="checkbox"]{
+    border: #3C7ECC;
+}
+label{
+    color: #3C7ECC;
+}
+@media screen and (min-width: 400px){
+    .contains{
+        margin: 10px;
+    }
+    
+}

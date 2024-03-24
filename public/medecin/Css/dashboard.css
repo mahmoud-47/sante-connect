@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Cas de base : Largeur maximale*/
+nav{
+    width: 17%;
+    height: 100vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3C7ECC;
+    z-index: 10;
+}
+#logo-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 150px;
+}
+#nav-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 10px;
+}
+#nav-elements a{
+    text-decoration: none;
+}
+.element{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.icon_nav {
+    width: 26px;
+}
+.element span{
+    font-size: 16px;
+}
+.element.active_page{
+    background-color: white;
+    color: #3C7ECC;
+}
+#logout-container{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+#logout-container a{
+    text-decoration: none;
+}
+
+main{
+    margin-left: 17%;
+    width: 83%;
+    position: relative;
+    background-color: #F9F9F9;
+    transition: all .5s ease;
+    padding: 25px 30px;
+    
+}
+#menu-button{
+    display: none;
+}
+#entete{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    gap: 25px;
+}
+
+.recherche{
+    position: relative;
+    width: 100%;
+    
+}
+.recherche input{
+    text-decoration: none;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    display: flex;
+    padding-left: 40px;
+    outline: none;
+    
+}
+
+.barre_recherche{
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 100%;
+}
+#loupe{
+    position: absolute;
+    left : 10px;
+    top: 11px;
+}
+.client {
+    display: flex;
+    height: 45px;
+    width: 230px;
+    align-items: center;
+    gap: 10px;
+}
+.client img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.client div {
+    font-size: small;
+    font-weight:lighter;
+}
+
+/*DEUXIEME PARTIE*/
+
+.rendez_vous a{
+    text-decoration: none;
+}
+
+.boite_rv {
+    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    align-items: stretch;
+}
+.tout {
+    background-color: #3C7ECC;
+}
+.attente {
+    background-color: #FE9535;
+}
+.confirme {
+    background-color: #158521;
+}
+.decline {
+    background-color: #CC3C3C;
+}
+.boite_rv img {
+    position: absolute;
+    left: -23px;
+    top: -23px;
+}
+.nombre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.boite_rv span {
+    font-size:50px;
+    font-weight: bold;
+    color: white;   
+    
+}
+.boite_rv p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.detail_rv {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.part {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+/* TROISIEME PARTIE*/
+
+.payement{
+    display: flex;
+    justify-content: space-between;
+}
+.boite_pay {
+    border-radius: 15px;
+    background-color: #3C7ECC;
+    width: 45%;
+    height: 123px;
+    position: relative;
+    
+}
+.boite_pay a {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.somme {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    
+}
+.etat_pay {
+    color: white;
+    font-size: 15px;
+    padding-bottom: px;
+    
+}
+.payement a {
+    text-decoration: none;
+}
+.boite_pay div{
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+/* Derniere partie*/
+.statistiques {
+    display: flex;
+    justify-content: space-between;
+}
+.boite_stat {
+    display: flex;
+    width: 45%;
+    gap: 20px;
+}
+.mot {
+    padding-top: 10px;
+    font-size: 25px;
+}
+.val {
+    font-size: 32px;
+    font-weight: 700;
+}
+.ligne {
+    border-left: 1px solid #989898;
+}
+
+#rvpaystat {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.stat_droite {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stat_gauche img {
+    width: 100%;
+    height: 100%;
+}
+.mini_titre {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/*Premier breackpoint : Largeur : 1250pixels*/
+@media screen and (max-width: 1250px) {
+    nav{
+        width: 20%;
+    }
+    main{
+        margin-left: 20%;
+        width: 80%;
+    }
+    
+}
+/*Deuxieme breackpoint : Largeur : 1060pixels*/
+@media screen and (max-width: 1060px) {
+    nav{
+        width: 25%;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+
+/*Troisième breackpoint : Largeur : 850pixels*/
+@media screen and (max-width: 850px) {
+    nav{
+        width: 30%;
+    }
+    main{
+        margin-left: 30%;
+        width: 70%;
+    }
+    .detail_rv{
+        flex-direction: column;
+    }
+    .somme {
+        font-size: 20px;
+    }
+}
+
+/*Quatrième breackpoint : Largeur : 710pixels*/
+@media screen and (max-width: 710px) {
+    nav{
+        width: 35%;
+    }
+    main{
+        margin-left: 35%;
+        width: 65%;
+    }
+    .element img{
+        width: 20px;
+    }
+    .element span{
+        font-size: 15px;
+    }
+    .payement {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .boite_pay {
+        width: 100%;
+    }
+    .statistiques {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .boite_stat {
+        width: 100%;
+    }
+}
+/*Cinquième breackpoint : Largeur : 565pixels*/
+@media screen and (max-width: 565px) {
+    nav{
+        width: 75%;
+        left: -75%;
+        transition: left 0.5s ease;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu-button{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #menu-img.active{
+        display: none;
+    }
+    #entete {
+        flex-direction: column;
+    }
+    .client{
+        margin-bottom: 20px;
+    }
+}

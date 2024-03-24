@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body style="font-size: 22px;">
+    <div style="margin: 30px 10%;border: 1px solid black;border-radius: 5px; padding: 10px;">
+        <h3 style="text-align: center;">Confirmez votre adresse mail</h3>
+        
+        <p >Bonjour,<br>
+            Votre code de verification est : <strong><?=$codeotp?></strong> 
+            <br><br>
+            Vous pouvez cliquer sur le lien en bas pour confirmer votre adresse mail
+            <br><br>
+            <center>
+                <a href="<?=$sitelink?>/?page=otp&token=<?=$token?>" style="text-decoration: none;background-color: blue;color: white; padding: 10px;border-radius: 2px;">
+                    Veuillez cliquer sur le lien
+                </a>
+            </center> 
+            <br><br>
+            Cordialement, l'equipe Santé Connect
+        </p>
+
+    </div>
+</body>
+</html>

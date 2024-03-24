@@ -1,0 +1,64 @@
+.body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ae4141;
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    padding: 25px 30px;
+}
+.contenu{
+    padding: 5px 30px;
+}
+.image{
+    width:100px;
+    height: 100px;
+    display: inline;
+}
+.title-text{
+    display: inline;
+    color: #3C7ECC;
+    font-size: 35px;
+}
+@media screen and (max-width: 765px){
+    .title{
+        gap: 60px;
+    }
+    .title-text{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 655px) {
+    .title{
+        gap: 30px;
+    }
+    .title-text{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 558px) {
+    .title{
+        gap: 20px;
+    }
+    .title-text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .title{
+        gap: 10px;
+    }
+    .title-text{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .title{
+        gap: 5px;
+    }
+    .title-text{
+        font-size: 10px;
+    }
+}

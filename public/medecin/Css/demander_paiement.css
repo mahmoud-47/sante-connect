@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #F9F9F9;
+}
+/*Cas de base : Largeur maximale*/
+nav{
+    width: 17%;
+    height: 100vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3C7ECC;
+    z-index: 10;
+}
+#logo-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 150px;
+}
+#nav-elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 10px;
+}
+#nav-elements a{
+    text-decoration: none;
+}
+.element{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.element span{
+    font-size: 16px;
+}
+.element.active_page{
+    background-color: white;
+    color: #3C7ECC;
+}
+#logout-container{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+#logout-container a{
+    text-decoration: none;
+}
+
+main{
+    margin-left: 17%;
+    margin-top:1%;
+    margin-right: 20%;
+    width: 83%;
+    padding: 25px 30px; 
+    position: relative;
+    transition: all .5s ease;
+}
+.action-form{
+    align-items: center;
+}
+#menu-button{
+    display: none;
+}
+
+/*Premier breackpoint : Largeur : 1250pixels*/
+@media screen and (max-width: 1250px) {
+    nav{
+        width: 20%;
+    }
+    main{
+        margin-left: 20%;
+        width: 80%;
+    }
+}
+/*Deuxieme breackpoint : Largeur : 1060pixels*/
+@media screen and (max-width: 1060px) {
+    nav{
+        width: 25%;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+}
+
+/*Troisième breackpoint : Largeur : 848pixels*/
+@media screen and (max-width: 848px) {
+    nav{
+        width: 30%;
+    }
+    main{
+        margin-left: 30%;
+        width: 70%;
+    }
+}
+
+/*Quatrième breackpoint : Largeur : 710pixels*/
+@media screen and (max-width: 710px) {
+    nav{
+        width: 35%;
+    }
+    main{
+        margin-left: 35%;
+        width: 65%;
+    }
+    .element img{
+        width: 20px;
+    }
+    .element span{
+        font-size: 15px;
+    }
+}
+/*Cinquième breackpoint : Largeur : 500pixels*/
+@media screen and (max-width: 565px) {
+    nav{
+        width: 75%;
+        left: -75%;
+        transition: left 0.5s ease;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    #menu-button{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #menu-img.active{
+        display: none;
+    }
+}
+
+.icon_nav {
+    width: 26px;
+}
+/*----------------------------------*/
+
+.contains form{ 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.heure{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.debut{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.fin{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.debut{
+    margin-right: 3%;
+}
+.numb{
+    display: inline-flex;
+    width: 50%;
+}
+.numb input{
+    width: 100%;
+    margin-right: 6%;
+}
+.envoie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date input, .debut input, .fin input, .numb input{
+    font-size: 16px;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    color: rgba(137, 137, 137,47%);
+    outline: none;
+    padding: 10px;
+}
+.envoie input{
+    padding: 10px 60px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: 1px solid #3C7ECC;
+    border-radius: 8px;
+    color: white;
+    background-color: #3C7ECC;
+    outline: none;
+}
+input[type="checkbox"]{
+    border: #3C7ECC;
+}
+label{
+    color: #3C7ECC;
+}
+@media screen and (min-width: 400px){
+    .contains{
+        margin: 10px;
+    } 
+}
+@media screen and (max-width: 395px){
+    .heure{
+        flex-wrap: wrap;    
+    } 
+    .debut{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .fin{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 590px){
+    .heure{
+        flex-wrap: wrap;    
+    } 
+    .debut{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .fin{
+        width: 100%;
+    }
+}
+
+
